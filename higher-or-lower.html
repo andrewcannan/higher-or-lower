@@ -16,8 +16,8 @@
     <div class="background">
         <!-- this first-paint div to be hidden with js on button click -->
         <div id="first-paint">
-            <div id="game-heading">
-                <h1 class="game-heading-text">Higher or Lower</h1>
+            <div id="logo-heading">
+                <h1 class="logo-heading-text">Higher or Lower</h1>
             </div>
             <div id="logo">
 
@@ -44,24 +44,27 @@
 
             <div id="card">
                 <div id="content">
-                    <div id="card-back"></div>
-                    <div id="card-front"></div>
+                    <div class="card-back"></div>
+                    <div id="card-answer"></div>
                 </div>
             </div>
 
             <input id="answer-box" type="text">
-            <button data-type="submit" class="btn btn--blue">Submit</button>
+            <button data-type="submit" class="btn btn--black btn-submit">Submit</button>
 
-            <div id="hint-area">
-                <p id="hint-text"></p>
+            <div id="response">
+                <div class="score-area">
+                    <p>Tries : <span id="correct">0</span></p>
+                    <p>Correct : <span id="correct">0</span></p>
+                    <p>Incorrect : <span id="incorrect">0</span></p>
+                </div>
+                <div id="hint-area">
+                    <p id="hint-text">The answer is higher than 3, 2 guesses remaining.</p>
+                </div>
             </div>
-
-            <div class="score-area">
-                <p>Tries : <span id="correct">0</span></p>
-                <p>Correct : <span id="correct">0</span></p>
-                <p>Incorrect : <span id="incorrect">0</span></p>
-            </div>
+            
         </div>
     </div>
 </body>
+
 </html>

@@ -2,7 +2,8 @@
 
 /* general rules */
 
-body,html {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -46,24 +47,24 @@ body,html {
 }
 
 .btn-black {
-border-color: #000;
-color: #000;
+    border-color: #000;
+    color: #000;
 }
 
-.btn-black:active,
-.btn-black:hover {
-background-color: #000;
-color: white;
+.btn:active,
+.btn:hover {
+    background-color: #000;
+    color: white;
 }
 
 /* first div/page */
 
-#game-heading {
-        padding-top: 100px;
-        margin-bottom: 50px;
+#logo-heading {
+    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
-.game-heading-text {
+.logo-heading-text {
     font-family: Rye, sans-serif;
     font-size: 72px;
     text-align: center;
@@ -103,23 +104,265 @@ color: white;
     padding-top: 100px;
 }
 
+/* cards */
+
+.card-ace {
+    background: url(../images/ace.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-2 {
+    background: url(../images/two.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-3 {
+    background: url(../images/three.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-4 {
+    background: url(../images/four.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-5 {
+    background: url(../images/five.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-6 {
+    background: url(../images/six.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-7 {
+    background: url(../images/seven.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-8 {
+    background: url(../images/eight.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;;
+}
+
+.card-9 {
+    background: url(../images/nine.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-10 {
+    background: url(../images/ten.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-jack {
+    background: url(../images/jack.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-queen {
+    background: url(../images/queen.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-king {
+    background: url(../images/king.png);
+    height: 90%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.card-back {
+    background: url(../images/back.png);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+#card {
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    background: transparent;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+/* game div/page */
+
+#game-heading {
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+
+.game-heading-text {
+    font-family: Rye, sans-serif;
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+}
+
+#answer-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+}
+
+#response {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 1%;
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+#hint-text {
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    color: red;
+}
+
+.btn-submit {
+    width: 150px;
+    height: 40px;
+    font-family: roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #000;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 53%;
+}
+
 @media screen and (max-width: 576px) {
     .game-heading-text {
         font-size: 48px;
     }
+
+    .logo-heading-text {
+        font-size: 48px;
+    }
+
     #logo {
         height: 300px;
         width: 300px;
     }
+
     #game-heading {
         padding-top: 50px;
     }
+
+    #logo-heading {
+        padding-top: 50px;
+    }
+
     #rules-text h2 {
         font-size: 36px;
         margin: auto;
         padding-top: 50px;
     }
-    
+
     #rules-text p {
         font-size: 22px;
         width: 75%;
