@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap');
 
+/* general rules */
+
 body,html {
     height: 100%;
     margin: 0;
@@ -19,6 +21,42 @@ body,html {
     width: 100%;
     position: relative;
 }
+
+#rules {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* buttons */
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #000;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.btn-black {
+border-color: #000;
+color: #000;
+}
+
+.btn-black:active,
+.btn-black:hover {
+background-color: #000;
+color: white;
+}
+
+/* first div/page */
 
 #game-heading {
         padding-top: 100px;
@@ -42,30 +80,27 @@ body,html {
     margin: auto;
 }
 
-.btn {
-        width: 220px;
-        height: 60px;
-        font-family: roboto, sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        color: #000;
-        border-radius: 15px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 100px;
-        margin-bottom: 100px;
-}
+/* rules div/page */
 
-.btn-blue {
-    border-color: #000;
+#rules-text {
+    font-family: roboto, sans-serif;
     color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.btn-black:active,
-.btn-black:hover {
-    background-color: #000;
-    color: white;
+#rules-text h2 {
+    font-size: 48px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+#rules-text p {
+    font-size: 28px;
+    width: 75%;
+    margin: auto;
+    padding-top: 100px;
 }
 
 @media screen and (max-width: 576px) {
@@ -78,5 +113,17 @@ body,html {
     }
     #game-heading {
         padding-top: 50px;
+    }
+    #rules-text h2 {
+        font-size: 36px;
+        margin: auto;
+        padding-top: 50px;
+    }
+    
+    #rules-text p {
+        font-size: 22px;
+        width: 75%;
+        margin: auto;
+        padding-top: 25px;
     }
 }
