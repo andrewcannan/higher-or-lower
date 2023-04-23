@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rye&display=swap');
+
+body,html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: url(../images/vintage-grunge-paper-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#first-paint {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#game-heading {
+        padding-top: 100px;
+        margin-bottom: 50px;
+}
+
+.game-heading-text {
+    font-family: Rye, sans-serif;
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+}
+
+#logo {
+    background: url(../images/logo.png);
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.btn {
+        width: 220px;
+        height: 60px;
+        font-family: roboto, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: #000;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 100px;
+        margin-bottom: 100px;
+}
+
+.btn-blue {
+    border-color: #000;
+    color: #000;
+}
+
+.btn-black:active,
+.btn-black:hover {
+    background-color: #000;
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .game-heading-text {
+        font-size: 48px;
+    }
+    #logo {
+        height: 300px;
+        width: 300px;
+    }
+    #game-heading {
+        padding-top: 50px;
+    }
+}
