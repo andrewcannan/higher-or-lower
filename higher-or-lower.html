@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="assets/scripts/game.js"></script>
     <title>Higher or Lower</title>
 </head>
 
@@ -35,10 +37,12 @@
         <div id="game-heading">
             <h2 class="game-heading-text">Higher or Lower</h2>
         </div>
-        
+
         <div id="card">
-            <div id="card-back"></div>
-            <div id="card-front"></div>
+            <div id="content">
+                <div id="card-back"></div>
+                <div id="card-front"></div>
+            </div>
         </div>
 
         <input id="answer-box" type="text">
@@ -54,7 +58,7 @@
             <p>Incorrect : <span id="incorrect">0</span></p>
         </div>
     </div>
-
+    
 </body>
 
 </html>
