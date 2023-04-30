@@ -11,66 +11,96 @@ $(document).ready(function () {
         $('#game').show();
         newGame();
     });
-    $('#submit').click(function() {
+    $('#submit').click(function () {
         checkAnswer();
+        console.log($('#answer-box').val());
     });
-    $('#next-card').click(function() {
+    $('#next-card').click(function () {
         newGame();
     });
 });
 
+let cards = [{
+    Ace: 1},
+    {Two: 2},
+    {Three: 3},
+    {Four: 4},
+    {Five: 5},
+    {Six: 6},
+    {Seven: 7},
+    {Eight: 8},
+    {Nine: 9},
+    {Ten: 10},
+    {Jack: 11},
+    {Queen: 12},
+    {King: 13
+}];
+
 let game = {
-    cardFaces: ['Ace', 'Jack', 'Queen', 'King', 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    currentCardFace: '',
+    currentCard: '',
     tries: '',
     correct: 0,
     incorrect: 0,
 };
 
 function newGame() {
-    game.currentCardFace = '';
+    game.currentCard = '';
     game.tries = 3;
     $('#next-card').hide();
+    $('#submit').show();
     $('#content').removeClass();
     $('#card-answer').removeClass();
+    $('#hint-text').text('');
     setTimeout(() => {
-        pickCardFace();
+        pickCard();
     }, 300);
     updateTries();
 };
 
-function pickCardFace() {
-    game.currentCardFace = game.cardFaces[Math.floor(Math.random() * game.cardFaces.length)];
-    $('#card-answer').addClass('card-' + game.currentCardFace);
+function pickCard() {
+    game.currentCard = cards[Math.floor(Math.random() * cards.length)];
+    $('#card-answer').addClass('card-' + Object.keys(game.currentCard));
 };
 
 function checkAnswer() {
-    let playerAnswer = $('#answer-box').val();
-    let correctAnswer = game.currentCardFace;
+    let playerAnswer = '';
+        if ($('#answer-box').val() == 'Jack') {
+            playerAnswer = 11;
+        } else if ($('#answer-box').val() == 'Queen') {
+            playerAnswer = 12;
+        } else if ($('#answer-box').val() == 'King') {
+            playerAnswer = 13;
+        } else if ($('#answer-box').val() == 'Ace') {
+            playerAnswer = 1;
+        } else {
+            playerAnswer = $('#answer-box').val();
+        };
+    let correctAnswer = Object.values(game.currentCard);
 
     if (playerAnswer > correctAnswer) {
-        alert('the card is lower than that');
+        $('#hint-text').text('The card is lower than that');
         game.tries--;
         updateTries();
         if (game.tries === 0) {
-            alert('ran out of guesses');
+            $('#hint-text').text('Ran out of guesses');
             game.incorrect++;
             updateIncorrect();
             showCard();
             nextCardRed();
         }
     } else if (playerAnswer < correctAnswer) {
-        alert('the card is higher than that');
+        $('#hint-text').text('The card is higher than that');
         game.tries--;
         updateTries();
         if (game.tries === 0) {
-            alert('ran out of guesses');
+            $('#hint-text').text('Ran out of guesses');
             game.incorrect++;
             updateIncorrect();
             showCard();
             nextCardRed();
         }
     } else if (playerAnswer == correctAnswer) {
+        $('#hint-text').text('Congratulations!')
         game.correct++;
         updateCorrect();
         showCard();
@@ -96,8 +126,10 @@ function showCard() {
 
 function nextCardRed() {
     $('#next-card').removeClass('btn-green').addClass('btn-red').show();
+    $('#submit').hide();
 };
 
 function nextCardGreen() {
     $('#next-card').removeClass('btn-red').addClass('btn-green').show();
+    $('#submit').hide();
 };

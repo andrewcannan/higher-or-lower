@@ -127,7 +127,7 @@ html {
 
 /* cards */
 
-.card-ace {
+.card-Ace {
     background: url(../images/ace.png);
     height: 90%;
     width: 100%;
@@ -138,7 +138,7 @@ html {
     position: absolute;
 }
 
-.card-2 {
+.card-Two {
     background: url(../images/two.png);
     height: 90%;
     width: 100%;
@@ -149,7 +149,7 @@ html {
     position: absolute;
 }
 
-.card-3 {
+.card-Three {
     background: url(../images/three.png);
     height: 90%;
     width: 100%;
@@ -160,7 +160,7 @@ html {
     position: absolute;
 }
 
-.card-4 {
+.card-Four {
     background: url(../images/four.png);
     height: 90%;
     width: 100%;
@@ -171,7 +171,7 @@ html {
     position: absolute;
 }
 
-.card-5 {
+.card-Five {
     background: url(../images/five.png);
     height: 90%;
     width: 100%;
@@ -182,7 +182,7 @@ html {
     position: absolute;
 }
 
-.card-6 {
+.card-Six {
     background: url(../images/six.png);
     height: 90%;
     width: 100%;
@@ -193,7 +193,7 @@ html {
     position: absolute;
 }
 
-.card-7 {
+.card-Seven {
     background: url(../images/seven.png);
     height: 90%;
     width: 100%;
@@ -204,7 +204,7 @@ html {
     position: absolute;
 }
 
-.card-8 {
+.card-Eight {
     background: url(../images/eight.png);
     height: 90%;
     width: 100%;
@@ -215,7 +215,7 @@ html {
     position: absolute;;
 }
 
-.card-9 {
+.card-Nine {
     background: url(../images/nine.png);
     height: 90%;
     width: 100%;
@@ -226,7 +226,7 @@ html {
     position: absolute;
 }
 
-.card-10 {
+.card-Ten {
     background: url(../images/ten.png);
     height: 90%;
     width: 100%;
@@ -237,7 +237,7 @@ html {
     position: absolute;
 }
 
-.card-jack {
+.card-Jack {
     background: url(../images/jack.png);
     height: 90%;
     width: 100%;
@@ -248,7 +248,7 @@ html {
     position: absolute;
 }
 
-.card-queen {
+.card-Queen {
     background: url(../images/queen.png);
     height: 90%;
     width: 100%;
@@ -259,7 +259,7 @@ html {
     position: absolute;
 }
 
-.card-king {
+.card-King {
     background: url(../images/king.png);
     height: 90%;
     width: 100%;
