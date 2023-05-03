@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // click events to hide relevant divs in the application
     $('#next-card').hide();
     $('#rules').hide();
     $('#game').hide();
@@ -11,15 +12,15 @@ $(document).ready(function () {
         $('#game').show();
         newGame();
     });
+    // click events on game buttons
     $('#submit').click(function () {
         checkAnswer();
-        console.log($('#answer-box').val());
     });
     $('#next-card').click(function () {
         newGame();
     });
 });
-
+// potential cards as array of objects key van be taken to set classes to card face and values taken for game
 let cards = [{
     Ace: 1},
     {Two: 2},
@@ -63,17 +64,18 @@ function pickCard() {
 };
 
 function checkAnswer() {
+    // evaluates piucture cards ie A,J,Q,K as numbers
     let playerAnswer = '';
-        if ($('#answer-box').val() == 'Jack') {
+        if ($('#answer-box').val() === 'Jack') {
             playerAnswer = 11;
-        } else if ($('#answer-box').val() == 'Queen') {
+        } else if ($('#answer-box').val() === 'Queen') {
             playerAnswer = 12;
-        } else if ($('#answer-box').val() == 'King') {
+        } else if ($('#answer-box').val() === 'King') {
             playerAnswer = 13;
-        } else if ($('#answer-box').val() == 'Ace') {
+        } else if ($('#answer-box').val() === 'Ace') {
             playerAnswer = 1;
         } else {
-            playerAnswer = $('#answer-box').val();
+            playerAnswer = parseInt($('#answer-box').val(), 10);
         };
     let correctAnswer = Object.values(game.currentCard);
 
@@ -107,7 +109,7 @@ function checkAnswer() {
         nextCardGreen();
     };
 };
-
+// dom update functions
 function updateTries() {
     $('#tries').text(game.tries);
 };
