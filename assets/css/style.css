@@ -7,14 +7,10 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-.background {
     background: url(../images/vintage-grunge-paper-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 
 #first-paint {
@@ -27,6 +23,13 @@ html {
     height: 100%;
     width: 100%;
     position: relative;
+}
+
+footer p,
+footer p i {
+    text-align: center;
+    font-family: roboto, sans-serif;
+    color: #000;
 }
 
 /* buttons */

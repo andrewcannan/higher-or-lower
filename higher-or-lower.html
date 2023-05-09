@@ -9,21 +9,26 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="assets/scripts/game.js"></script>
+    <script src="https://kit.fontawesome.com/0f1d727d9d.js" crossorigin="anonymous"></script>
     <title>Higher or Lower</title>
 </head>
 
 <body>
-    <div class="background">
-        <!-- this first-paint div to be hidden with js on button click -->
-        <div id="first-paint">
-            <div id="logo-heading">
-                <h1 class="logo-heading-text">Higher or Lower</h1>
-            </div>
-            <div id="logo">
+    <header>
+        <div class="background">
+            <!-- this first-paint div to be hidden with js on button click -->
+            <div id="first-paint">
+                <div id="logo-heading">
+                    <h1 class="logo-heading-text">Higher or Lower</h1>
+                </div>
+                <div id="logo">
 
+                </div>
+                <button class="btn btn-black" id="rules-button">Rules</button>
             </div>
-            <button class="btn btn-black" id="rules-button">Rules</button>
-        </div>
+    </header>
+
+    <main>
         <!-- this rules div to be shown on button click -->
         <div id="rules">
             <div id="rules-text">
@@ -63,9 +68,13 @@
                     <p id="hint-text"></p>
                 </div>
             </div>
-            
+
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>For more like this <a href="https://github.com/andrewcannan" target="_blank" aria-label="GitHub (opens in new tab)"><i class="fa-brands fa-github"></i></a></p>
+    </footer>
 </body>
 
 </html>
