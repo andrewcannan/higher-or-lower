@@ -48,6 +48,21 @@ footer p i {
     margin-top: 30px;
 }
 
+.btn-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #000;
+    border-color: #000;
+    margin: auto;
+}
+
+.btn-circle:active,
+.btn-circle:hover {
+    background-color: #000;
+    color: white;
+}
+
 .btn-black {
     border-color: #000;
     color: #000;
@@ -336,6 +351,23 @@ footer p i {
     font-size: 16px;
     color: #000;
     text-align: center;
+    display: grid;
+}
+
+#score-area {
+    grid-column: 2;
+}
+
+#reset {
+    grid-column: 1;
+}
+
+#home {
+    grid-column: 3;
+}
+
+#hint-area {
+    grid-column: 2;
 }
 
 #hint-text {
