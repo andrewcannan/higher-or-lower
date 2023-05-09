@@ -19,23 +19,55 @@ $(document).ready(function () {
     $('#next-card').click(function () {
         newGame();
     });
+    $('#reset').click(function () {
+        resetGame();
+    });
+    $('#home').click(function () {
+        location.reload();
+    });
 });
+
 // potential cards as array of objects key van be taken to set classes to card face and values taken for game
 let cards = [{
-    Ace: 1},
-    {Two: 2},
-    {Three: 3},
-    {Four: 4},
-    {Five: 5},
-    {Six: 6},
-    {Seven: 7},
-    {Eight: 8},
-    {Nine: 9},
-    {Ten: 10},
-    {Jack: 11},
-    {Queen: 12},
-    {King: 13
-}];
+        Ace: 1
+    },
+    {
+        Two: 2
+    },
+    {
+        Three: 3
+    },
+    {
+        Four: 4
+    },
+    {
+        Five: 5
+    },
+    {
+        Six: 6
+    },
+    {
+        Seven: 7
+    },
+    {
+        Eight: 8
+    },
+    {
+        Nine: 9
+    },
+    {
+        Ten: 10
+    },
+    {
+        Jack: 11
+    },
+    {
+        Queen: 12
+    },
+    {
+        King: 13
+    }
+];
 
 let game = {
     currentCard: '',
@@ -58,6 +90,17 @@ function newGame() {
     updateTries();
 };
 
+function resetGame() {
+    game.currentCard = '';
+    game.tries = '';
+    game.correct = 0;
+    game.incorrect = 0;
+    updateTries();
+    updateCorrect();
+    updateIncorrect();
+    newGame();
+}
+
 function pickCard() {
     game.currentCard = cards[Math.floor(Math.random() * cards.length)];
     $('#card-answer').addClass('card-' + Object.keys(game.currentCard));
@@ -66,17 +109,17 @@ function pickCard() {
 function checkAnswer() {
     // evaluates piucture cards ie A,J,Q,K as numbers
     let playerAnswer = '';
-        if ($('#answer-box').val() === 'Jack') {
-            playerAnswer = 11;
-        } else if ($('#answer-box').val() === 'Queen') {
-            playerAnswer = 12;
-        } else if ($('#answer-box').val() === 'King') {
-            playerAnswer = 13;
-        } else if ($('#answer-box').val() === 'Ace') {
-            playerAnswer = 1;
-        } else {
-            playerAnswer = parseInt($('#answer-box').val(), 10);
-        };
+    if ($('#answer-box').val() === 'Jack') {
+        playerAnswer = 11;
+    } else if ($('#answer-box').val() === 'Queen') {
+        playerAnswer = 12;
+    } else if ($('#answer-box').val() === 'King') {
+        playerAnswer = 13;
+    } else if ($('#answer-box').val() === 'Ace') {
+        playerAnswer = 1;
+    } else {
+        playerAnswer = parseInt($('#answer-box').val(), 10);
+    };
     let correctAnswer = Object.values(game.currentCard);
 
     if (playerAnswer > correctAnswer) {
