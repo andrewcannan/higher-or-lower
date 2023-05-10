@@ -54,23 +54,22 @@
                 </div>
             </div>
             <div>
-                <input id="answer-box" type="text" placeholder="Enter Guess Here">
+                <div id="answer"><input id="answer-box" type="text" placeholder="Enter Guess Here" onsubmit="return validate()"><span
+                        id="countdown">99</span>
+                </div>
                 <button id="submit" class="btn btn-black btn-submit">Submit</button>
                 <button id="next-card" class="btn">Next Card</button>
             </div>
             <div id="response">
-                
-                    <button id="reset" class="btn-circle"><i class="fa-solid fa-r"></i></button>
-                
-
+                <button id="reset" class="btn-circle"><i class="fa-solid fa-r"></i></button>
                 <div class="score-area">
                     <p>Tries Left : <span id="tries">0</span></p>
                     <p>Correct : <span id="correct">0</span></p>
                     <p>Incorrect : <span id="incorrect">0</span></p>
                 </div>
 
-                    <button id="home" class="btn-circle"><i class="fa-solid fa-house"></i></button>
-                
+                <button id="home" class="btn-circle"><i class="fa-solid fa-house"></i></button>
+
                 <div id="hint-area">
                     <p id="hint-text"></p>
                 </div>

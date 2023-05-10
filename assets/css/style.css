@@ -338,12 +338,25 @@ footer p i {
     margin: 0;
 }
 
+#answer {
+    margin: auto;
+    text-align: center;
+}
+
 #answer-box {
     border: 1px solid black;
     margin: auto;
     width: 150px;
     height: 40px;
-    display: block;
+    display: inline-block;
+}
+
+#countdown {
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-left: 10px;
 }
 
 #response {

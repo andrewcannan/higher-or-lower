@@ -15,6 +15,7 @@ $(document).ready(function () {
     // click events on game buttons
     $('#submit').click(function () {
         checkAnswer();
+        validate();
     });
     $('#next-card').click(function () {
         newGame();
@@ -69,16 +70,20 @@ let cards = [{
     }
 ];
 
+
+
 let game = {
     currentCard: '',
     tries: '',
     correct: 0,
     incorrect: 0,
+    timer: 99
 };
 
 function newGame() {
     game.currentCard = '';
     game.tries = 3;
+    game.timer = 99;
     $('#next-card').hide();
     $('#submit').show();
     $('#content').removeClass();
@@ -88,6 +93,7 @@ function newGame() {
         pickCard();
     }, 300);
     updateTries();
+    countdown();
 };
 
 function resetGame() {
@@ -152,6 +158,29 @@ function checkAnswer() {
         nextCardGreen();
     };
 };
+
+const slow = (time) => {
+    return new Promise(resolve => setTimeout(resolve, time))
+};
+
+const countdown = async () => {
+    while (game.timer > 0) {
+        $('#countdown').text(game.timer);
+        game.timer--;
+        await slow(1000);
+    };
+};
+
+function validate() {
+    let cardAnswers = ['Ace', 1, 2, 3, 4, 5, 6, 7 ,8 ,9, 10, 'Jack', 'Queen', 'King'];
+    let playerAnswer = $('#answer-box').val();
+        if (playerAnswer == availableAnswers[i]) {
+            submit;
+        } else {
+            alert ('Not a Valid Answer');
+        }
+    };
+
 // dom update functions
 function updateTries() {
     $('#tries').text(game.tries);
