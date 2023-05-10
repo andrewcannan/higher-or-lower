@@ -165,10 +165,17 @@ const slow = (time) => {
 
 const countdown = async () => {
     while (game.timer > 0) {
-        $('#countdown').text(game.timer);
         game.timer--;
+        $('#countdown').text(game.timer);
         await slow(1000);
     };
+    if (game.timer === 0) {
+        $('#hint-text').text('Time ran out');
+        game.incorrect++;
+        updateIncorrect();
+        showCard();
+        nextCardRed();
+    }
 };
 
 function validate() {
@@ -180,7 +187,6 @@ function validate() {
             alert ('Not a Valid Answer');
         }
     };
-
 
 // dom update functions
 function updateTries() {
