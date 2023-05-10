@@ -181,6 +181,7 @@ function validate() {
         }
     };
 
+
 // dom update functions
 function updateTries() {
     $('#tries').text(game.tries);
