@@ -26,9 +26,12 @@ $(document).ready(function () {
     $('#home').click(function () {
         location.reload();
     });
+    $('#answer-box').keyup(function () { //change first letter to capital for validation
+        this.value = this.value.substr(0, 1).toUpperCase() + this.value.substr(1).toLowerCase();
+    });
 });
 
-// potential cards as array of objects key van be taken to set classes to card face and values taken for game
+// potential cards as array of objects key can be taken to set classes to card face and values taken for game
 let cards = [{
         Ace: 1
     },
@@ -71,7 +74,7 @@ let cards = [{
 ];
 
 
-
+//main game object
 let game = {
     currentCard: '',
     tries: '',
@@ -79,7 +82,10 @@ let game = {
     incorrect: 0,
     timer: 99
 };
-
+/**
+ * starts a a new turn, hide/shows relevant buttons, flips card back over
+ * resets timer and amount of tries and picks a new card
+ */
 function newGame() {
     game.currentCard = '';
     game.tries = 3;
@@ -95,7 +101,9 @@ function newGame() {
     updateTries();
     countdown();
 };
-
+/**
+ * resets the scores of the game so player can start fresh
+ */
 function resetGame() {
     game.currentCard = '';
     game.tries = '';
@@ -106,14 +114,21 @@ function resetGame() {
     updateIncorrect();
     newGame();
 }
-
+/**
+ * randomly picks a card from cards object and assigns to game object
+ * and adds css class to div
+ */
 function pickCard() {
     game.currentCard = cards[Math.floor(Math.random() * cards.length)];
     $('#card-answer').addClass('card-' + Object.keys(game.currentCard));
 };
-
+/**
+ * evaluates if players guess is correct or not and updates
+ * amount of tries, correct answers and incorrect answers in game
+ * object accordingly
+ */
 function checkAnswer() {
-    // evaluates piucture cards ie A,J,Q,K as numbers
+    // evaluates picture cards ie A,J,Q,K as numbers
     let playerAnswer = '';
     if ($('#answer-box').val() === 'Jack') {
         playerAnswer = 11;
@@ -158,15 +173,15 @@ function checkAnswer() {
         nextCardGreen();
     };
 };
-
+//while loop for countdown timer
 const slow = (time) => {
     return new Promise(resolve => setTimeout(resolve, time))
 };
 
 const countdown = async () => {
     while (game.timer > 0) {
-        game.timer--;
         $('#countdown').text(game.timer);
+        game.timer--;
         await slow(1000);
     };
     if (game.timer === 0) {
@@ -177,16 +192,19 @@ const countdown = async () => {
         nextCardRed();
     }
 };
-
+/**
+ * validation for input field to only accept potential answers
+ * as not to waste a player guess
+ */
 function validate() {
-    let cardAnswers = ['Ace', 1, 2, 3, 4, 5, 6, 7 ,8 ,9, 10, 'Jack', 'Queen', 'King'];
+    let cardAnswers = ['Ace', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
     let playerAnswer = $('#answer-box').val();
-        if (playerAnswer == availableAnswers[i]) {
-            submit;
-        } else {
-            alert ('Not a Valid Answer');
-        }
-    };
+    if (playerAnswer == availableAnswers[i]) {
+        submit;
+    } else {
+        alert('Not a Valid Answer');
+    }
+};
 
 // dom update functions
 function updateTries() {
