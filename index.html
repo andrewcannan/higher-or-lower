@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div>
-                <div id="answer"><input id="answer-box" type="text" placeholder="Enter Guess Here" onsubmit="return validate()"><span
+                <div id="answer"><input id="answer-box" type="text" placeholder="Enter Guess Here" onsubmit="event.preventDefault(); validate()"><span
                         id="countdown">99</span>
                 </div>
                 <button id="submit" class="btn btn-black btn-submit">Submit</button>

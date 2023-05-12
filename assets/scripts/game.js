@@ -14,7 +14,6 @@ $(document).ready(function () {
     });
     // click events on game buttons
     $('#submit').click(function () {
-        checkAnswer();
         validate();
     });
     $('#next-card').click(function () {
@@ -194,16 +193,18 @@ const countdown = async () => {
 };
 /**
  * validation for input field to only accept potential answers
+ * and run checkAnswer function if valid guess
  * as not to waste a player guess
  */
 function validate() {
-    let cardAnswers = ['Ace', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
+    let cardAnswers = ['Ace', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
     let playerAnswer = $('#answer-box').val();
-    if (playerAnswer == availableAnswers[i]) {
-        submit;
+    
+    if (cardAnswers.includes(playerAnswer)) {
+        checkAnswer();   
     } else {
-        alert('Not a Valid Answer');
-    }
+        alert('Not a Valid Answer');  
+    };
 };
 
 // dom update functions
