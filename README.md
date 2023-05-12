@@ -19,8 +19,21 @@ This website was created as the 2nd Milestone Project (User Centric Frontend Dev
     * [Typography](#typography)
     * [Images](#images)
     * [Icons](#icons)
+* [Features](#features)
+    * [HomePage](#homepage--first-section)
+    * [Rules](#rules-section)
+    * [Game](#game-section)
+        * [Card](#card)
+        * [Input and Submission](#user-input-and-submission)
+        * [Response](#response)
+        * [Timer](#timer)
+        * [Next Card](#next-card-button)
+        * [Reset and Home](#reset-and-home-buttons)
+    * [Footer](#footer)
+    * [404 Page](#404-page)
+
 <br><br>
-<br><br>
+
 
 # User Experience
 
