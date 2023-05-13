@@ -58,7 +58,7 @@ To provide a basic fun game for the user to play.
 
 Play a Game?
 <br><br>
-<br>
+
 
 # Design
 
@@ -95,16 +95,19 @@ Wireframes created on [Figma](https://www.figma.com/).
 <br>
 <img src="assets/readme-images/game-mobile.png">
 </details>
-<br>
+<br><br>
 
 ## Typography 
 
 For the main headings a western style font was chosen *insert link* to stay it the overall theme off the game. For all other text Roboto *insert link* was chosen as its modern and easily readable. All fonts from Google Fonts.
+<br><br>
 
 ## Images 
 
 *fill in later*
 [CloudConvert](assets/images/vintage-grunge-paper-background.webp) was used to convert the background image into webp for faster loading.
+<br><br>
+
 ## Icons
 
 Icons used for the Reset and Home buttons and in the Footer are from [FontAwesome](https://fontawesome.com/).
@@ -123,6 +126,7 @@ On intial load of the site this is the header div that is only shown whilst the 
 <summary>Homepage</summary>
 <img src="assets/readme-images/homepage.png">
 </details>
+<br><br>
 
 ## Rules Section
 
@@ -131,6 +135,7 @@ This section explains the rules of the game to the user for the upcoming game. c
 <summary>Rules</summary>
 <img src="assets/readme-images/rules.png">
 </details>
+<br><br>
 
 ## Game Section
 
@@ -209,6 +214,7 @@ Home button reloads the window and displays the Homepage/First section giving th
 <summary>Home</summary>
 <img src="assets/readme-images/home-button.png">
 </details>
+<br><br>
 
 ## Footer
 
@@ -217,6 +223,7 @@ Footer displays a link to my GitHub profile for more projects to be checked out.
 <summary>Footer</summary>
 <img src="assets/readme-images/footer.png">
 </details>
+<br><br>
 
 ## 404 Page
 
@@ -225,6 +232,7 @@ Simple page consisting of Game heading and logo, text to make the user aware the
 <summary>404 Page</summary>
 <img src="assets/readme-images/404.png">
 </details>
+<br><br>
 
 ## Future Implementations
 
@@ -273,6 +281,7 @@ The [W3C Markup Validation Service](https://validator.w3.org/) was used to valid
 <br>
 <img src="assets/readme-images/html-validation.png">
 </details>
+<br><br>
 
 ## CSS Validation
 The [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS code. Passed with 0 errors.
@@ -281,6 +290,7 @@ The [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/) was us
 <br>
 <img src="assets/readme-images/css-validation.png">
 </details>
+<br><br>
 
 ## Accessibility
 
@@ -290,6 +300,7 @@ The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/) wa
 <br>
 <img src="assets/readme-images/wave-validation.png">
 </details>
+<br><br>
 
 ## Performance
 Lighthouse within google developer tools was used to check the overall performance of the site.
