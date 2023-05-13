@@ -94,7 +94,7 @@ For the main headings a western style font was chosen *insert link* to stay it t
 ## Images 
 
 *fill in later*
-
+[CloudConvert](assets/images/vintage-grunge-paper-background.webp) was used to convert the background image into webp for faster loading.
 ## Icons
 
 Icons used for the Reset and Home buttons and in the Footer are from [FontAwesome](https://fontawesome.com/).
@@ -249,6 +249,8 @@ SIte was created using vanilla HTML and CSS no frameworks, and Javascript with a
     * Used to crop cards from main image.
 * /////
     * Used to remove background from croped images.
+* CloudConvert
+    * Used to convert background image to webp.
 <br><br>
 
 # Testing
