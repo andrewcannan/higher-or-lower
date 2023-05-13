@@ -269,3 +269,12 @@ The [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/) was us
 <br>
 <img src="assets/readme-images/css-validation.png">
 </details>
+
+## Accessibility
+
+The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/) was used to check the site conforms with high accessibility standards. 1 error was shown for an ampty button but thats because the button has a js function that reloads the window. 
+<details>
+<summary>Stylesheet</summary>
+<br>
+<img src="assets/readme-images/wave-validation.png">
+</details>
