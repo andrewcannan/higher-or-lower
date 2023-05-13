@@ -261,3 +261,11 @@ The [W3C Markup Validation Service](https://validator.w3.org/) was used to valid
 <br>
 <img src="assets/readme-images/html-validation.png">
 </details>
+
+## CSS Validation
+The [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS code. Passed with 0 errors.
+<details>
+<summary>Stylesheet</summary>
+<br>
+<img src="assets/readme-images/css-validation.png">
+</details>
