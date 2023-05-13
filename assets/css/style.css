@@ -111,7 +111,7 @@ footer p i {
 }
 
 #logo {
-    background: url(../images/logo.png);
+    background: url(../images/logo.webp);
     height: 400px;
     width: 400px;
     background-position: center;
@@ -146,7 +146,7 @@ footer p i {
 /* cards */
 
 .card-Ace {
-    background: url(../images/ace.png);
+    background: url(../images/ace.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -157,7 +157,7 @@ footer p i {
 }
 
 .card-Two {
-    background: url(../images/two.png);
+    background: url(../images/two.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -168,7 +168,7 @@ footer p i {
 }
 
 .card-Three {
-    background: url(../images/three.png);
+    background: url(../images/three.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -179,7 +179,7 @@ footer p i {
 }
 
 .card-Four {
-    background: url(../images/four.png);
+    background: url(../images/four.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -190,7 +190,7 @@ footer p i {
 }
 
 .card-Five {
-    background: url(../images/five.png);
+    background: url(../images/five.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -201,7 +201,7 @@ footer p i {
 }
 
 .card-Six {
-    background: url(../images/six.png);
+    background: url(../images/six.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -212,7 +212,7 @@ footer p i {
 }
 
 .card-Seven {
-    background: url(../images/seven.png);
+    background: url(../images/seven.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -223,7 +223,7 @@ footer p i {
 }
 
 .card-Eight {
-    background: url(../images/eight.png);
+    background: url(../images/eight.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -234,7 +234,7 @@ footer p i {
 }
 
 .card-Nine {
-    background: url(../images/nine.png);
+    background: url(../images/nine.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -245,7 +245,7 @@ footer p i {
 }
 
 .card-Ten {
-    background: url(../images/ten.png);
+    background: url(../images/ten.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -256,7 +256,7 @@ footer p i {
 }
 
 .card-Jack {
-    background: url(../images/jack.png);
+    background: url(../images/jack.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -267,7 +267,7 @@ footer p i {
 }
 
 .card-Queen {
-    background: url(../images/queen.png);
+    background: url(../images/queen.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -278,7 +278,7 @@ footer p i {
 }
 
 .card-King {
-    background: url(../images/king.png);
+    background: url(../images/king.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -289,7 +289,7 @@ footer p i {
 }
 
 .card-back {
-    background: url(../images/back.png);
+    background: url(../images/back.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -392,7 +392,7 @@ footer p i {
 /*404 page*/
 
 #logo-404 {
-    background: url(../images/logo.png);
+    background: url(../images/logo.webp);
     height: 400px;
     width: 400px;
     background-position: center;
