@@ -389,6 +389,28 @@ footer p i {
     color: red;
 }
 
+/*404 page*/
+
+#logo-404 {
+    background: url(../images/logo.png);
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#btn-404 a {
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+/*media queries*/
+
 @media screen and (max-width: 576px) {
     .game-heading-text {
         font-size: 48px;
@@ -423,29 +445,13 @@ footer p i {
         margin: auto;
         padding-top: 25px;
     }
+    #logo-404 {
+        height: 300px;
+        width: 300px;
+    }
 }
 
-/*404 page*/
 
-#logo-404 {
-    background: url(../images/logo.png);
-    height: 400px;
-    width: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    margin-top: 10px;
-}
-
-#btn-404 a {
-    font-family: roboto, sans-serif;
-    font-size: 16px;
-    color: #000;
-    text-align: center;
-}
-
-/*media queries*/
 
 @media screen and (max-width: 576px) {
     #card {

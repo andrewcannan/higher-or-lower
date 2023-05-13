@@ -31,7 +31,7 @@ This website was created as the 2nd Milestone Project (User Centric Frontend Dev
         * [Reset and Home](#reset-and-home-buttons)
     * [Footer](#footer)
     * [404 Page](#404-page)
-
+    * [Future Implementations](#future-implementations)
 <br><br>
 
 
@@ -216,3 +216,48 @@ Simple page consisting of Game heading and logo, text to make the user aware the
 <img src="assets/readme-images/404.png">
 </details>
 
+## Future Implementations
+
+If this was to be developed further could create a log in and database to store the users scores and implement a highscore system to intice players to return and beat their score.
+<br><br>
+
+# Technologies
+
+## Languages
+
+SIte was created using vanilla HTML and CSS no frameworks, and Javascript with a some Jquery used.
+
+## Frameworks, Libaries and Programs
+
+* JQuery
+    * Used to simplify some code written.
+* Git / Github
+    * Used for version control, storage and deployment.
+* Gitpod
+    * IDE used.
+* GoogleFonts
+    * Used for importing fonts into stylesheet.
+* Google Dev Tools
+    * Used for troubleshooting and small style changes.
+* Favicon.io
+    * Used to create a favicon.
+* Figma
+    * Used for to create Wireframes.
+* /////
+    * Used to source images.
+* ////
+    * Used to crop cards from main image.
+* /////
+    * Used to remove background from croped images.
+<br><br>
+
+# Testing
+
+## HTML Validation
+
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML code. Passed with 0 errors.
+<details>
+<summary>HTML Validation</summary>
+<br>
+<img src="assets/readme-images/html-validation.png">
+</details>
