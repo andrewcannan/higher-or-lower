@@ -32,6 +32,16 @@ This website was created as the 2nd Milestone Project (User Centric Frontend Dev
     * [Footer](#footer)
     * [404 Page](#404-page)
     * [Future Implementations](#future-implementations)
+* [Technologies](#technologies)
+    * [Languages](#languages)
+    * [Frameworks/Libaries/Programs](#frameworks-libaries-and-programs)
+* [Testing](#testing)
+    * [HTML Validation](#html-validation)
+    * [CSS Validation](#css-validation)
+    * [Accessibility](#accessibility)
+    * [Performance](#performance)
+* [Deployment](#deployment)
+* [Credits](#credits)
 <br><br>
 
 
@@ -250,7 +260,7 @@ SIte was created using vanilla HTML and CSS no frameworks, and Javascript with a
 * /////
     * Used to remove background from croped images.
 * CloudConvert
-    * Used to convert background image to webp.
+    * Used to convert images to webp.
 <br><br>
 
 # Testing
@@ -280,3 +290,66 @@ The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/) wa
 <br>
 <img src="assets/readme-images/wave-validation.png">
 </details>
+
+## Performance
+Lighthouse within google developer tools was used to check the overall performance of the site.
+<details>
+<summary>Lighthouse Report</summary>
+<br>
+<img src="assets/readme-images/lighthouse.png">
+</details>
+<br><br>
+
+# Deployment
+## Deployment
+<br>
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Main Branch".
+5. The page will automatically refresh.
+6. Once the deployment process completed the published site's link will appear after the main title.
+<br><br>
+
+## Forking the GitHub Repository
+<br>
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+<br><br>
+
+## Making a Local Clone
+<br>
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+<br><br>
+
+# Credits
+
+*fill in later*
