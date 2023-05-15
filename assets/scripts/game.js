@@ -197,7 +197,7 @@ const countdown = async () => {
  * as not to waste a player guess
  */
 function validate() {
-    let cardAnswers = ['Ace', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
+    let cardAnswers = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
     let playerAnswer = $('#answer-box').val();
     
     if (cardAnswers.includes(playerAnswer)) {
