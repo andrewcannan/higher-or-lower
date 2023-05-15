@@ -79,7 +79,8 @@ let game = {
     tries: '',
     correct: 0,
     incorrect: 0,
-    timer: 99
+    timer: 99,
+    timerPause: false
 };
 /**
  * starts a a new turn, hide/shows relevant buttons, flips card back over
@@ -152,6 +153,7 @@ function checkAnswer() {
             updateIncorrect();
             showCard();
             nextCardRed();
+            game.timerPause = true;
         }
     } else if (playerAnswer < correctAnswer) {
         $('#hint-text').text('The card is higher than that');
@@ -163,6 +165,7 @@ function checkAnswer() {
             updateIncorrect();
             showCard();
             nextCardRed();
+            game.timerPause = true;
         }
     } else if (playerAnswer == correctAnswer) {
         $('#hint-text').text('Congratulations!')
@@ -170,6 +173,7 @@ function checkAnswer() {
         updateCorrect();
         showCard();
         nextCardGreen();
+        game.timerPause = true;
     };
 };
 //while loop for countdown timer
@@ -182,6 +186,9 @@ const countdown = async () => {
         $('#countdown').text(game.timer);
         game.timer--;
         await slow(1000);
+        if (game.timerPause == true) {
+            break;
+        }
     };
     if (game.timer === 0) {
         $('#hint-text').text('Time ran out');
@@ -197,7 +204,7 @@ const countdown = async () => {
  * as not to waste a player guess
  */
 function validate() {
-    let cardAnswers = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
+    let cardAnswers = ['Ace', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
     let playerAnswer = $('#answer-box').val();
     
     if (cardAnswers.includes(playerAnswer)) {
@@ -233,3 +240,4 @@ function nextCardGreen() {
     $('#next-card').removeClass('btn-red').addClass('btn-green').show();
     $('#submit').hide();
 };
+
