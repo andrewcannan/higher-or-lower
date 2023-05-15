@@ -105,8 +105,8 @@ For the main headings a western style font was chosen *insert link* to stay it t
 
 ## Images 
 
-*fill in later*
-[CloudConvert](assets/images/vintage-grunge-paper-background.webp) was used to convert the background image into webp for faster loading.
+All images were sourced from [FreePik](https://www.freepik.com/),
+[CloudConvert](assets/images/vintage-grunge-paper-background.webp) was used to convert the images into webp for faster loading.
 <br><br>
 
 ## Icons
@@ -262,12 +262,12 @@ SIte was created using vanilla HTML and CSS no frameworks, and Javascript with a
     * Used to create a favicon.
 * Figma
     * Used for to create Wireframes.
-* /////
+* Freepik.com
     * Used to source images.
-* ////
+* Windows Photos
     * Used to crop cards from main image.
-* /////
-    * Used to remove background from croped images.
+* Remove.bg
+    * Used to remove background from cropped images.
 * CloudConvert
     * Used to convert images to webp.
 <br><br>
@@ -384,4 +384,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 # Credits
 
-*fill in later*
+* Playing Cards - [dgim-studio - freepik](https://www.freepik.com/free-vector/deck-gangsta-playing-cards_8083771.htm#page=2&query=skull%20playing%20cards&position=2&from_view=keyword&track=ais)
+* Logo - [dgim-studio - freepik](https://www.freepik.com/free-vector/heart-shaped-vintage-chicano-tattoo-concept_8136708.htm#query=skull%20playing%20cards&position=32&from_view=keyword&track=ais)
+* Background Image - [kjpargeter - freepik](https://www.freepik.com/free-photo/vintage-grunge-paper-background_5405364.htm#query=western%20background&position=1&from_view=keyword&track=ais)

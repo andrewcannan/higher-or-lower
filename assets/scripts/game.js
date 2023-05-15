@@ -183,7 +183,7 @@ const slow = (time) => {
 };
 
 const countdown = async () => {
-    while (game.timer > 0) {
+    while (game.timer >= 0) {
         $('#countdown').text(game.timer);
         game.timer--;
         await slow(1000);
