@@ -90,6 +90,7 @@ function newGame() {
     game.currentCard = '';
     game.tries = 3;
     game.timer = 99;
+    game.timerPause = false;
     $('#next-card').hide();
     $('#submit').show();
     $('#content').removeClass();
