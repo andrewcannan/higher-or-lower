@@ -42,6 +42,10 @@ This website was created as the 2nd Milestone Project (User Centric Frontend Dev
     * [Performance](#performance)
     * [Functionality](#functionality)
 * [Deployment](#deployment)
+    * [Deployment](#deployment-1)
+    * [Forking](#forking-the-github-repository)
+    * [Local Clone](#making-a-local-clone)
+    * [Version Control](#version-control)
 * [Credits](#credits)
 <br><br>
 
@@ -312,6 +316,21 @@ Lighthouse within google developer tools was used to check the overall performan
 </details>
 <br><br>
 
+## Responsiveness
+Tested across various devices using Google Dev Tools and real world devices for responsiveness and expected look and layout.
+
+| Device                | Looks as Expected |
+| --------------------- | ----------------- |
+| Desktop               | &check;           |
+| Samsung S22 Ultra     | &check;           |
+| IPhone 12 Pro         | &check;           |
+| IPhone 6/7/8          | &check;           |
+| IPad Pro 2            | &check;           |
+| Nest Hub              | &check;           |
+| Samsung Galaxy A51/71 | &check;           |
+| Surface Pro 7         | &check;           |
+<br><br>
+
 ## Functionality
 
 | Feature          | Action                                                            | Expected Result                                                                                                                                                           | Actual Resut |
@@ -380,6 +399,16 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 ```
+<br><br>
+
+## Version Control
+
+Workflow controlled using Git and GitHub. It helps you track different versions of your code and collaborate with other developers. Version control allows you to keep track of your work and helps you to easily explore the changes you have made.
+
+You can think of a repository as a “main folder”, everything associated with a specific project should be kept in a repo for that project.
+You will have a local copy (on your computer) and an online copy (on GitHub) of all the files in the repository.
+
+Once Changes on your local copy have been saved they can be added to the staging area using ```Git -add```. And then commited using ```Git commit``` along with your message, meaning they will be saved as a version of the repository which is then ready to be pushed, using ```Git push```, up to the online copy of your repository.
 <br><br>
 
 # Credits
