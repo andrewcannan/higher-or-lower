@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+    <!-- JQuery delivered through CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <!-- My Scripts -->
     <script src="assets/scripts/game.js"></script>
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/0f1d727d9d.js" crossorigin="anonymous"></script>
     <title>Higher or Lower</title>
     <meta name="description" content="Wild western game of Higher or Lower.">
@@ -55,7 +60,7 @@
             <div id="card">
                 <div id="content">
                     <div class="card-back"></div>
-                    <div id="card-answer"></div>
+                    <div id="card-answer"></div> <!-- Card that will be assigned css class by js -->
                 </div>
             </div>
             <div>
@@ -63,8 +68,9 @@
                         onsubmit="event.preventDefault(); validate()" aria-label="Enter Guess Here"><span
                         id="countdown">99</span>
                 </div>
+                <!-- Each button will show/hide dependant on stage of game i.e turn over/in progress -->
                 <button id="submit" class="btn btn-black btn-submit">Submit</button>
-                <button id="next-card" class="btn">Next Card</button>
+                <button id="next-card" class="btn">Next Card</button> 
             </div>
             <div id="response">
                 <button id="reset" class="btn-circle" aria-label="Reset Scores"><i class="fa-solid fa-r"></i></button>
@@ -75,7 +81,7 @@
                 </div>
 
                 <button id="home" class="btn-circle"><i class="fa-solid fa-house" aria-label="Home"></i></button>
-
+                <!-- Hint div to appear with relevant text dependant on js logic -->
                 <div id="hint-area">
                     <p id="hint-text"></p>
                 </div>
@@ -85,6 +91,7 @@
     </main>
 
     <footer>
+        <!-- Link to GitHub profile -->
         <p>For more like this <a href="https://github.com/andrewcannan" target="_blank"
                 aria-label="GitHub (opens in new tab)"><i class="fa-brands fa-github"></i></a></p>
     </footer>
