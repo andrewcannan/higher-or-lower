@@ -101,7 +101,7 @@ function newGame() {
     }, 300);
     updateTries();
     countdown();
-};
+}
 /**
  * resets the scores of the game so player can start fresh
  */
@@ -122,7 +122,7 @@ function resetGame() {
 function pickCard() {
     game.currentCard = cards[Math.floor(Math.random() * cards.length)];
     $('#card-answer').addClass('card-' + Object.keys(game.currentCard));
-};
+}
 /**
  * evaluates if players guess is correct or not and updates
  * amount of tries, correct answers and incorrect answers in game
@@ -141,7 +141,7 @@ function checkAnswer() {
         playerAnswer = 1;
     } else {
         playerAnswer = parseInt($('#answer-box').val(), 10);
-    };
+    }
     let correctAnswer = Object.values(game.currentCard);
 
     if (playerAnswer > correctAnswer) {
@@ -169,17 +169,17 @@ function checkAnswer() {
             game.timerPause = true;
         }
     } else if (playerAnswer == correctAnswer) {
-        $('#hint-text').text('Congratulations!')
+        $('#hint-text').text('Congratulations!');
         game.correct++;
         updateCorrect();
         showCard();
         nextCardGreen();
         game.timerPause = true;
-    };
-};
+    }
+}
 //while loop for countdown timer
 const slow = (time) => {
-    return new Promise(resolve => setTimeout(resolve, time))
+    return new Promise(resolve => setTimeout(resolve, time));
 };
 
 const countdown = async () => {
@@ -190,7 +190,7 @@ const countdown = async () => {
         if (game.timerPause == true) {
             break;
         }
-    };
+    }
     if (game.timer === 0) {
         $('#hint-text').text('Time ran out');
         game.incorrect++;
@@ -212,33 +212,32 @@ function validate() {
         checkAnswer();   
     } else {
         alert('Not a Valid Answer');  
-    };
-};
+    }
+}
 
 // dom update functions
 function updateTries() {
     $('#tries').text(game.tries);
-};
+}
 
 function updateCorrect() {
     $('#correct').text(game.correct);
-};
+}
 
 function updateIncorrect() {
     $('#incorrect').text(game.incorrect);
-};
+}
 
 function showCard() {
     $('#content').addClass('flip');
-};
+}
 
 function nextCardRed() {
     $('#next-card').removeClass('btn-green').addClass('btn-red').show();
     $('#submit').hide();
-};
+}
 
 function nextCardGreen() {
     $('#next-card').removeClass('btn-red').addClass('btn-green').show();
     $('#submit').hide();
-};
-
+}
