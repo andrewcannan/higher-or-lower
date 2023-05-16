@@ -95,6 +95,10 @@ footer p i {
     margin-top: 30px;
 }
 
+#next-card {
+    width: 150px;
+    height: 40px;
+}
 
 /* first div/page */
 
@@ -426,7 +430,7 @@ footer p i {
     }
 
     #game-heading {
-        padding-top: 50px;
+        padding-top: 25px;
     }
 
     #logo-heading {
@@ -440,7 +444,7 @@ footer p i {
     }
 
     #rules-text p {
-        font-size: 22px;
+        font-size: 20px;
         width: 75%;
         margin: auto;
         padding-top: 25px;
@@ -449,11 +453,6 @@ footer p i {
         height: 300px;
         width: 300px;
     }
-}
-
-
-
-@media screen and (max-width: 576px) {
     #card {
         width: 150px;
     height: 200px;
