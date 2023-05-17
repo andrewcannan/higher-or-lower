@@ -104,7 +104,7 @@ Wireframes created on [Figma](https://www.figma.com/).
 
 ## Typography 
 
-For the main headings a western style font was chosen *insert link* to stay it the overall theme off the game. For all other text Roboto *insert link* was chosen as its modern and easily readable. All fonts from Google Fonts.
+For the main headings a western style font was chosen [Rye](https://fonts.google.com/specimen/Rye?query=rye) to stay it the overall theme off the game. For all other text [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) was chosen as its modern and easily readable. All fonts from Google Fonts.
 <br><br>
 
 ## Images 
